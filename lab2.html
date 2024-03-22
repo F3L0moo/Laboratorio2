@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lab2Script.js"></script>
+    <style>
+        body{
+            display: block;
+
+        }
+        #cuadroColor {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Ejercicio #1</h1>
+        <label>Coloque la base</label>
+        <input type="number" id="base" placeholder="numero">
+        <label>Coloque el exponente</label>
+        <input type="number" id="exponente" placeholder="exponente">
+        <button onclick="ejercicio1()">Realizar Operacion</button>
+        <h3 id="resultado"></h3>
+    </div>
+    <div>
+        <h1>Ejercicio #2</h1>
+        <label>Ingrese la cantidad de grados centigrados</label>
+        <input type="number" id="centigrados" placeholder="C°">
+        <button onclick="ejercicio2()">Realizar conversion a F°</button>
+        <h3 id="farenheit"></h3>
+    </div>
+    <div>
+        <h1>Ejercicio #3</h1>
+        <label>Ingrese los nombres</label>
+        <input type="text" name="nombres" id="nombres">
+        <button onclick="despliegueNombres()">Desplegar y Agregar Nombres</button>
+        <input type="number" name="lenght" id="NomLenght" placeholder="numero para filtrar">
+        <button onclick="nombresLenght()">filtrar</button>
+        <ul id="nombresLista"></ul>
+        <ul id="listaFiltro"></ul>
+    </div>
+    <div>
+        <h1>Ejercicio #4</h1>
+        <label for="nacimiento">Ingrese el anio de nacimiento</label>
+        <input type="date" name="nacimiento" id="nacimiento">
+        <button onclick="calcuEdad()">Calcular edad aprox</button>
+        <h3 id="edad"></h3>
+    </div>
+    <div>
+        <h1>Ejercicio #5</h1>
+        <label for="hilera">Ingrese su texto</label>
+        <input type="text" name="hilera" id="hilera">
+        <button onclick="contarPalabras()">Contar pablabras ingresadas</button>
+        <h3 id="conteo"></h3>
+    </div>
+    <div>
+        <h1>Ejercicio #6</h1>
+        <label for="numprom">Ingrese sus numeros</label>
+        <input type="number" name="numprom" id="numprom">
+        <button onclick="promedio()">ingresar numero</button>
+        <button onclick="getPromedio()">obtener promedio de numeros</button>
+        <ul id="listanumeros"></ul>
+        <h3 id="promedio"></h3>
+    </div>
+    <div>
+        <label for="colorInput">Ingrese un color:</label>
+        <input type="color" id="colorInput">
+        <button onclick="mostrarColor()">Mostrar Color</button>
+    </div>
+    <div id="cuadroColor"></div>
+</body>
+</html>
